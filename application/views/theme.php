@@ -58,7 +58,7 @@
                                         <em>Yesterday</em>
                                     </span>
                                 </div>
-                                <div>Data 1</div>
+                                <div>Data</div>
                             </a>
                         </li>
                         <li class="divider"></li>
@@ -70,7 +70,7 @@
                                         <em>Yesterday</em>
                                     </span>
                                 </div>
-                                <div>Data 2</div>
+                                <div>Data</div>
                             </a>
                         </li>
                         <li class="divider"></li>
@@ -82,7 +82,7 @@
                                         <em>Yesterday</em>
                                     </span>
                                 </div>
-                                <div>Data 2</div>
+                                <div>Data</div>
                             </a>
                         </li>
                         <li class="divider"></li>
