@@ -11,12 +11,12 @@
 
     <title>Salesman-CRM</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
-    <link href="css/plugins/timeline.css" rel="stylesheet">
-    <link href="css/sb-admin-2.css" rel="stylesheet">
-    <link href="css/plugins/morris.css" rel="stylesheet">
-    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo base_url(); ?>matrix/themes/sbadmin/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>matrix/themes/sbadmin/css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>matrix/themes/sbadmin/css/plugins/timeline.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>matrix/themes/sbadmin/css/sb-admin-2.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>matrix/themes/sbadmin/css/plugins/morris.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>matrix/themes/sbadmin/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -368,13 +368,13 @@
     <!-- /#wrapper -->
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/plugins/metisMenu/metisMenu.min.js"></script>
-    <script src="js/plugins/morris/raphael.min.js"></script>
-    <script src="js/plugins/morris/morris.min.js"></script>
-    <script src="js/plugins/morris/morris-data.js"></script>
-    <script src="js/sb-admin-2.js"></script>
+    <script src="<?php echo base_url(); ?>matrix/themes/sbadmin/js/jquery.js"></script>
+    <script src="<?php echo base_url(); ?>matrix/themes/sbadmin/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url(); ?>matrix/themes/sbadmin/js/plugins/metisMenu/metisMenu.min.js"></script>
+    <script src="<?php echo base_url(); ?>matrix/themes/sbadmin/js/plugins/morris/raphael.min.js"></script>
+    <script src="<?php echo base_url(); ?>matrix/themes/sbadmin/js/plugins/morris/morris.min.js"></script>
+    <script src="<?php echo base_url(); ?>matrix/themes/sbadmin/js/plugins/morris/morris-data.js"></script>
+    <script src="<?php echo base_url(); ?>matrix/themes/sbadmin/js/sb-admin-2.js"></script>
 
 </body>
 
