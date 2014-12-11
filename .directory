@@ -1,6 +1,11 @@
 [Dolphin]
+<<<<<<< HEAD
 Timestamp=2014,12,10,19,56,38
 Version=3
 
 [Settings]
 HiddenFilesShown=true
+=======
+Timestamp=2014,12,10,19,3,9
+Version=3
+>>>>>>> 104817096b91e86550202379ee117bc543d46403

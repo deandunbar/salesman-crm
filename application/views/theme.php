@@ -58,7 +58,11 @@
                                         <em>Yesterday</em>
                                     </span>
                                 </div>
+<<<<<<< HEAD
                                 <div>Data 1</div>
+=======
+                                <div>Data</div>
+>>>>>>> 104817096b91e86550202379ee117bc543d46403
                             </a>
                         </li>
                         <li class="divider"></li>
@@ -70,7 +74,11 @@
                                         <em>Yesterday</em>
                                     </span>
                                 </div>
+<<<<<<< HEAD
                                 <div>Data 2</div>
+=======
+                                <div>Data</div>
+>>>>>>> 104817096b91e86550202379ee117bc543d46403
                             </a>
                         </li>
                         <li class="divider"></li>
@@ -82,7 +90,11 @@
                                         <em>Yesterday</em>
                                     </span>
                                 </div>
+<<<<<<< HEAD
                                 <div>Data 2</div>
+=======
+                                <div>Data</div>
+>>>>>>> 104817096b91e86550202379ee117bc543d46403
                             </a>
                         </li>
                         <li class="divider"></li>
