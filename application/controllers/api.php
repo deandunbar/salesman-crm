@@ -19,7 +19,7 @@ class Api extends CI_Controller {
 	 */
 	public function index()
 	{
-		$main_content = $this->load->view('widgets/test_table_json', $data, true); // Select our view file that will display our main area
+		$main_content = $this->load->view('widgets/test_table_json'); // Select our view file that will display our main area
 		echo $main_content;
 	}
 }
