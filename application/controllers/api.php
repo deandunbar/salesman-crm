@@ -22,6 +22,15 @@ class Api extends CI_Controller {
 		$main_content = $this->load->view('widgets/test_table_json'); // Select our view file that will display our main area
 		echo $main_content;
 	}
+	
+	public function api_test(){
+		$main_content = $this->load->view('widgets/test_table_json'); // Select our view file that will display our main area
+		echo $main_content;
+		
+		
+	}
+	
+	
 }
 
 /* End of file welcome.php */

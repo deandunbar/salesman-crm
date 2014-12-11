@@ -14,14 +14,7 @@ window.onload = function() {
 
 
 
-     $('#my-ajax-table').dynatable({
-  dataset: {
-    ajax: true,
-    ajaxUrl: '/dynatable-ajax.json',
-    ajaxOnLoad: true,
-    records: []
-  }
-});
+
 
 
 //Loads the correct sidebar on window load,
