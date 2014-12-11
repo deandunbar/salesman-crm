@@ -17,10 +17,28 @@ class Dashboard extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
+	 
+	 function __construct()
+	{
+		parent::__construct();
+		$this->load->database();
+		$this->load->library(array('ion_auth','form_validation'));
+		$this->load->helper(array('url','language'));
+
+		$this->form_validation->set_error_delimiters($this->config->item('error_start_delimiter', 'ion_auth'), $this->config->item('error_end_delimiter', 'ion_auth'));
+
+		$this->lang->load('auth');
+	}
+	 
+	 
+	 
 	public function index()
 	{
-		//~ $this->load->view('welcome_message');
-		
+		if (!$this->ion_auth->logged_in())
+		{
+			//redirect them to the login page
+			redirect('auth/login', 'refresh');
+		}
 		
 		
 		//~ $id = 1;
@@ -40,6 +58,24 @@ class Dashboard extends CI_Controller {
 		
 		
 	}
+	
+	
+	
+	public function login(){
+		
+		$data['site_name'] = "Salesman-crm";
+		
+		//~ $main_content = $this->load->view('widgets/dashboard', $data, true); // Select our view file that will display our main area
+		//~ $restaraunt_list_main_content = $this->load->view('widgets/restaraunt_list_main_content', $data, true);
+		//~ 
+		//~ echo $content;
+		//~ 
+		//~ $data['main_content'] = $main_content;
+		
+		$this->load->view('login_theme.php', $data);
+		
+	}
+	
 }
 
 /* End of file welcome.php */

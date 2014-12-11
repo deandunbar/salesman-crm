@@ -12,10 +12,10 @@
     <title>Salesman CRM</title>
 
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
-    <link href="css/sb-admin-2.css" rel="stylesheet">
-    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo base_url(); ?>matrix/themes/sbadmin/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>matrix/themes/sbadmin/css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>matrix/themes/sbadmin/css/sb-admin-2.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>matrix/themes/sbadmin/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,16 +33,17 @@
             <div class="col-md-4 col-md-offset-4">
                 <div class="login-panel panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Please Sign In</h3>
+                        <h3 class="panel-title"><?php echo lang('login_heading');?></h3>
                     </div>
                     <div class="panel-body">
-                        <form role="form">
+                        <?php echo form_open("auth/login");?>
+							<p><?php echo lang('login_subheading');?></p>
                             <fieldset>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>
+                                    <?php echo form_input($identity);?>
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                                    <?php echo form_input($password);?>
                                 </div>
                                 <div class="checkbox">
                                     <label>
@@ -50,19 +51,20 @@
                                     </label>
                                 </div>
                                 <!-- Change this to a button or input when using this as a form -->
-                                <a href="index.html" class="btn btn-lg btn-success btn-block">Login</a>
+                                <?php echo form_submit('submit', lang('login_submit_btn'), "class='btn btn-lg btn-success btn-block'");?>
                             </fieldset>
-                        </form>
+                        <?php echo form_close();?>
+                        <p><a href="forgot_password"><?php echo lang('login_forgot_password');?></a></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/plugins/metisMenu/metisMenu.min.js"></script>
-    <script src="js/sb-admin-2.js"></script>
+    <script src="<?php echo base_url(); ?>matrix/themes/sbadmin/js/jquery.js"></script>
+    <script src="<?php echo base_url(); ?>matrix/themes/sbadmin/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url(); ?>matrix/themes/sbadmin/js/plugins/metisMenu/metisMenu.min.js"></script>
+    <script src="<?php echo base_url(); ?>matrix/themes/sbadmin/js/sb-admin-2.js"></script>
 
 </body>
 
