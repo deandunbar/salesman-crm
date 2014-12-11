@@ -156,7 +156,7 @@
                             <div class="row">
                                 <div class="col-lg-4">
                                     <div class="table-responsive">
-                                        <table class="table table-bordered table-hover table-striped" id="my-ajax-table">
+                                        <table class="table table-bordered table-hover table-striped dynatable" id="my-ajax-table">
                                             <thead>
                                                <th>Some Attribute</th>
                                                 <th>Some Other Attribute</th>
