@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Salesman-CRM</title>
+    <title>Salesman CRM</title>
 
     <link href="<?php echo base_url(); ?>matrix/themes/sbadmin/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>matrix/themes/sbadmin/css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
@@ -58,19 +58,7 @@
                                         <em>Yesterday</em>
                                     </span>
                                 </div>
-                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <strong>JDean Dunbar</strong>
-                                    <span class="pull-right text-muted">
-                                        <em>Yesterday</em>
-                                    </span>
-                                </div>
-                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                                <div>Data 1</div>
                             </a>
                         </li>
                         <li class="divider"></li>
@@ -82,7 +70,19 @@
                                         <em>Yesterday</em>
                                     </span>
                                 </div>
-                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                                <div>Data 2</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>Dean Dunbar</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Data 2</div>
                             </a>
                         </li>
                         <li class="divider"></li>
