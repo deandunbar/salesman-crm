@@ -2,7 +2,12 @@ $(function() {
 
     $('#side-menu').metisMenu();
 
-    $('#my-ajax-table').dynatable({
+});
+
+
+$(window).load(function()
+{
+     $('#my-ajax-table').dynatable({
   dataset: {
     ajax: true,
     ajaxUrl: '/dynatable-ajax.json',
@@ -10,7 +15,6 @@ $(function() {
     records: []
   }
 });
-
 });
 
 //Loads the correct sidebar on window load,
