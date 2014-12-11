@@ -1,13 +1,16 @@
-window.onload = function() {
- 
-
-
-
 $(function() {
 
     $('#side-menu').metisMenu();
 
 });
+
+
+window.onload = function() {
+ 
+
+
+
+
 
 
 

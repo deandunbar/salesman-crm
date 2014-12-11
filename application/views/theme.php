@@ -375,7 +375,7 @@
     <script src="<?php echo base_url(); ?>matrix/themes/sbadmin/js/plugins/morris/raphael.min.js"></script>
     <script src="<?php echo base_url(); ?>matrix/themes/sbadmin/js/plugins/morris/morris.min.js"></script>
     <script src="<?php echo base_url(); ?>matrix/themes/sbadmin/js/plugins/morris/morris-data.js"></script>
-    <script src="<?php echo base_url(); ?>matrix/themes/plugins/jquery/jquery.dynatable.js"></script>
+    <script src="<?php echo base_url(); ?>matrix/plugins/dynatable/jquery.dynatable.js"></script>
     <script src="<?php echo base_url(); ?>matrix/themes/sbadmin/js/sb-admin-2.js"></script>
 
 </body>
