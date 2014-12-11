@@ -1,3 +1,8 @@
+window.onload = function() {
+ 
+
+
+
 $(function() {
 
     $('#side-menu').metisMenu();
@@ -5,8 +10,7 @@ $(function() {
 });
 
 
-$(window).load(function()
-{
+
      $('#my-ajax-table').dynatable({
   dataset: {
     ajax: true,
@@ -15,7 +19,7 @@ $(window).load(function()
     records: []
   }
 });
-});
+
 
 //Loads the correct sidebar on window load,
 //collapses the sidebar on window resize.
@@ -39,3 +43,4 @@ $(function() {
         }
     })
 });
+};
