@@ -59,6 +59,24 @@ class Dashboard extends CI_Controller {
 		
 	}
 	
+	public function contacts(){
+		if (!$this->ion_auth->logged_in())
+		{
+			//redirect them to the login page
+			redirect('auth/login', 'refresh');
+		}
+		
+		$data['temp'] = "temp";
+		
+		$main_content = $this->load->view('widgets/contact_search', $data, true); // Select our view file that will display our main area
+		
+		$data['main_content'] = $main_content;
+		
+		$this->load->view('theme.php', $data);
+		
+		
+	}
+	
 	
 	
 	public function login(){
