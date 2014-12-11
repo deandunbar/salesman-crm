@@ -16,6 +16,7 @@
     <link href="<?php echo base_url(); ?>matrix/themes/sbadmin/css/plugins/timeline.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>matrix/themes/sbadmin/css/sb-admin-2.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>matrix/themes/sbadmin/css/plugins/morris.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>matrix/themes/plugins/jquery/jquery.dynatable.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>matrix/themes/sbadmin/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -374,6 +375,7 @@
     <script src="<?php echo base_url(); ?>matrix/themes/sbadmin/js/plugins/morris/raphael.min.js"></script>
     <script src="<?php echo base_url(); ?>matrix/themes/sbadmin/js/plugins/morris/morris.min.js"></script>
     <script src="<?php echo base_url(); ?>matrix/themes/sbadmin/js/plugins/morris/morris-data.js"></script>
+    <script src="<?php echo base_url(); ?>matrix/themes/plugins/jquery/jquery.dynatable.js"></script>
     <script src="<?php echo base_url(); ?>matrix/themes/sbadmin/js/sb-admin-2.js"></script>
 
 </body>
