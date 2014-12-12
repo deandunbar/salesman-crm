@@ -60,7 +60,7 @@ class Api extends CI_Controller {
 	$contacts_list = $this->contacts_modal->get_contacts();
 	
 	foreach($contacts_list as &$val){
-		echo &$val;
+		echo $val;
 	}
 	
 	
