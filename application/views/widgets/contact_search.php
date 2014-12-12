@@ -127,7 +127,7 @@
 <script>
 
 
- onload = function() {
+$(function() {
     console.log("running");
     
     $.ajax({
@@ -160,6 +160,6 @@ function drawRow(rowData) {
 }
     
     
-  }
+});
 
 </script>
