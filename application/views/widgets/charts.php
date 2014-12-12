@@ -1,7 +1,16 @@
 <?php
 
 ?>
-
+<style>
+.pi-r {
+    width:50%;
+    float:right;
+}
+.pi-l {
+    width:50%;
+    float:left;
+}
+</style>
 <div class="row raise_the_roof">
                 <div class="col-lg-12">
                     <div class="panel panel-default">
@@ -23,11 +32,11 @@
                                 <h1>Compare to Last Year's Conversions</h1>
                                 <canvas id="myChart3" width="800" height="300">
                             </div>
-                            <div class="well pi"style="width:50%; float:left;">
+                            <div class="well pi-r">
                                 <h1>Compare to Last Year's Conversions</h1>
                                 <canvas id="myChart4" width="400" height="200">
                             </div>
-                             <div class="well pi" style="width:50%; float:right;">
+                             <div class="well pi-l">
                                 <h1>Compare to Last Year's Conversions</h1>
                                 <canvas id="myChart5" width="400" height="200">
                             </div>
