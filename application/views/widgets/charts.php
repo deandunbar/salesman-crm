@@ -12,16 +12,16 @@
                         <div class="panel-body medium_minimum_height">
                             <div class="well">
                                 <h1>Compare to Last Year's Conversions</h1>
-                                <canvas id="myChart" width="800" height="500">
+                                <canvas id="myChart" width="800" height="300">
 
                             </div>
                             <div class="well">
                                 <h1>Male vs. Female Interest Survey</h1>
-                                <canvas id="myChart2" width="800" height="500">
+                                <canvas id="myChart2" width="800" height="300">
                             </div>
                             <div class="well">
                                 <h1>Compare to Last Year's Conversions</h1>
-                                <canvas id="myChart3" width="800" height="500">
+                                <canvas id="myChart3" width="800" height="300">
                             </div>
                             <div class="well pi"style="width:50%; float:left;">
                                 <h1>Compare to Last Year's Conversions</h1>
