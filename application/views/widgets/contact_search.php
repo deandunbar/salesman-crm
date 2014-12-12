@@ -102,7 +102,7 @@
                         <!-- /.panel-heading -->
                         <div class="panel-body medium_minimum_height">
                             <div class="well">
-								<table id="personDataTable">
+								<table id="personDataTable" class="table">
 								    <tr>
 								        <th>Contact ID</th>
 								        <th>First Name</th>
