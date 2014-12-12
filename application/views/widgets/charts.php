@@ -49,7 +49,7 @@
         }
         ]
     };
-
+var myNewChart = new Chart(ctx);
 new Chart(ctx).PolarArea(data, options);
 </script>
 
