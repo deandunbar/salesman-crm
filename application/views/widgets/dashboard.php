@@ -461,7 +461,6 @@
             </div>
             <!-- /.row -->
 <script>
-window.onload = function() {
 
      $('#my-ajax-table').dynatable({
   dataset: {
@@ -471,6 +470,5 @@ window.onload = function() {
     records: []
   }
 });
-};
 
 </script>
