@@ -125,7 +125,13 @@
 
 
 <script>
-	window.onload = function() {
+	
+	
+	
+	
+	
+	
+	function start_page() {
 		
 		
 		$.ajax({
@@ -156,7 +162,7 @@ function drawRow(rowData) {
     row.append($("<td>" + rowData.Job_Title + "</td>"));
     row.append($("<td>" + rowData.Contact_Date + "</td>"));
 }
-};
-
+}
+window.onload = start_page();
 
 </script>
