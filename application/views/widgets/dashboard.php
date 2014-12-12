@@ -498,7 +498,7 @@ window.onload = function() {
      $('#my-ajax-table').dynatable({
   dataset: {
     ajax: true,
-    ajaxUrl: '<?php echo base_url(); ?>/index.php/api/api_test',
+    ajaxUrl: '<?php echo base_url(); ?>index.php/api/api_test',
     ajaxOnLoad: true,
     records: []
   }
