@@ -102,6 +102,14 @@
                         <!-- /.panel-heading -->
                         <div class="panel-body medium_minimum_height">
                             <div class="well">
+								<table id="my-ajax-table">
+								  <thead>
+								    <th>Some Attribute</th>
+								    <th>Some Other Attribute</th>
+								  </thead>
+								  <tbody>
+								  </tbody>
+								</table>
                             </div>
                         </div>
                         <!-- /.panel-body -->
