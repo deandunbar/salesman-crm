@@ -98,14 +98,13 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             DataTables Advanced Tables
-                            <div class="container">
+                           
 								<div class="row">
 							        <div class="search">
 										<input type="text" class="form-control input-sm" maxlength="64" placeholder="Search" />
 										 <button type="submit" class="btn btn-primary btn-sm">Search</button>
 									</div>
 								</div>
-							</div>
                             
                             
                         </div>
