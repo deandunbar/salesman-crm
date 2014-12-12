@@ -74,6 +74,26 @@ class Api extends CI_Controller {
 	return;
 	}
 	
+	public function search_contacts(){
+	
+	$lim = $this->input->post('lim');
+	$off = $this->input->post('off');
+	$q = $this->input->post('q');
+	
+	//~ echo var_dump($lim);
+	
+	
+	
+	$contacts_list = $this->contacts_modal->search_contacts($lim, $off, $q);
+	
+	$results_list = [];
+	$results_list["data"] = $contacts_list["data"];
+	$results_list["num_rows"] = $contacts_list["num_rows"];
+	
+	echo json_encode($results_list); 
+	return;
+	}
+	
 	
 }
 
