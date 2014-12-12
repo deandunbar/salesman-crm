@@ -86,6 +86,7 @@ $(function() {
         //bar data
                 var data2 = {
                     labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
+
                     datasets: [
                         {
                             label: "My First dataset",
