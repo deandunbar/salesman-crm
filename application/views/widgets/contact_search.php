@@ -98,6 +98,16 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             DataTables Advanced Tables
+                            <div class="container">
+								<div class="row">
+							        <div class="search">
+										<input type="text" class="form-control input-sm" maxlength="64" placeholder="Search" />
+										 <button type="submit" class="btn btn-primary btn-sm">Search</button>
+									</div>
+								</div>
+							</div>
+                            
+                            
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body medium_minimum_height">
@@ -144,6 +154,8 @@ $(function() {
 		
 		
 function drawTable(data) {
+	//delete the current rows first
+	$("#personDataTable").find("tr:gt(0)").remove();
     for (var i = 0; i < data.length; i++) {
         drawRow(data[i]);
     }
