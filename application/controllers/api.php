@@ -17,6 +17,33 @@ class Api extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
+	 
+	 	 function __construct()
+	{
+		parent::__construct();
+		$this->load->database();
+		$this->load->library(array('ion_auth','form_validation'));
+		$this->load->helper(array('url','language'));
+
+		$this->form_validation->set_error_delimiters($this->config->item('error_start_delimiter', 'ion_auth'), $this->config->item('error_end_delimiter', 'ion_auth'));
+
+		$this->lang->load('auth');
+		
+		/* make sure that users are logged in before they use the api
+		 * */
+		 if (!$this->ion_auth->logged_in())
+		{
+			//redirect them to the login page
+			redirect('auth/login', 'refresh');
+		}
+		
+		/* Load the modal for contacts
+		 * */
+		 $this->load->model('contacts_modal');
+		
+	}
+	
+	
 	public function index()
 	{
 		$main_content = $this->load->view('widgets/test_table_json'); // Select our view file that will display our main area
@@ -25,9 +52,18 @@ class Api extends CI_Controller {
 	
 	public function api_test(){
 		$main_content = $this->load->view('widgets/test_table_json'); // Select our view file that will display our main area
-		echo $main_content;
-		
-		
+		echo $main_content;	
+	}
+	
+	public function get_contacts(){
+	
+	$contacts_list = $this->contacts_modal->get_contacts();
+	
+	foreach($contacts_list as &$val){
+		echo &$val;
+	}
+	
+	
 	}
 	
 	
