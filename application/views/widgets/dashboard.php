@@ -488,13 +488,6 @@
 <script>
 window.onload = function() {
 
-
-
-
-
-
-
-
      $('#my-ajax-table').dynatable({
   dataset: {
     ajax: true,
