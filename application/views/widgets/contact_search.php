@@ -101,8 +101,8 @@
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body medium_minimum_height">
-                            <div class="well">
-								<table id="personDataTable" class="table">
+                            <div class="well2">
+								<table id="personDataTable" class="table table-striped">
 								    <tr>
 								        <th>Contact ID</th>
 								        <th>First Name</th>
