@@ -29,7 +29,8 @@ Class Contacts_modal extends CI_Model
 		
 		
 		  if($query -> num_rows() > 0){
-			$results = $query->result();
+			$results["data"] = $query->result();
+			$results["num_rows"] = $query -> num_rows();
 			return $results;
 		   }
 		   else

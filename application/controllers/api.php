@@ -60,16 +60,18 @@ class Api extends CI_Controller {
 	$lim = $this->input->post('lim');
 	$off = $this->input->post('off');
 	
+	//~ echo var_dump($lim);
+	
 	
 	
 	$contacts_list = $this->contacts_modal->get_contacts($lim, $off);
 	
 	$results_list = [];
+	$results_list["data"] = $contacts_list["data"];
+	$results_list["num_rows"] = $contacts_list["num_rows"];
 	
-	echo json_encode($contacts_list); 
+	echo json_encode($results_list); 
 	return;
-	
-	
 	}
 	
 	
