@@ -134,6 +134,7 @@ $(function() {
     url: '<?php echo base_url(); ?>index.php/api/get_contacts',
     type: "post",
     dataType: "json",
+    data: {lim: 10, off: 0},
     success: function(data, textStatus, jqXHR) {
         // since we are using jQuery, you don't need to parse response
         drawTable(data);
