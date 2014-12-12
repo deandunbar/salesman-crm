@@ -1,5 +1,5 @@
 <?php
-Class Contact_modal extends CI_Model
+Class Contacts_modal extends CI_Model
 {
 	/*
 	 * gets the list of all the contacts wanted
