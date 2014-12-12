@@ -347,3 +347,11 @@ table.dataTable thead .sorting:after {
 .panel-yellow a:hover {
     color: #df8a13;
 }
+
+.raise_the_roof{
+padding-top: 20px;
+}
+
+.medium_minimum_height{
+min-height: 500px;
+}
