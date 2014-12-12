@@ -17,7 +17,7 @@ Class Contacts_modal extends CI_Model
 		$this -> db -> select('Contact_ID, Company_ID,First_Name, Last_Name, Phone, Job_Title, Contact_Date');
 		$this -> db -> from('Contact');
 		//~ $this -> db -> where('Location_ID', $location_id);
-		//~ $this -> db -> limit(1);
+		$this -> db -> limit(50);
 		
 		$query = $this -> db -> get();
 	
