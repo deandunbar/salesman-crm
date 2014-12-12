@@ -1,7 +1,7 @@
 <?php
 
 ?>
-          
+
 <div class="row raise_the_roof">
                 <div class="col-lg-12">
                     <div class="panel panel-default">
@@ -11,6 +11,7 @@
                         <!-- /.panel-heading -->
                         <div class="panel-body medium_minimum_height">
                             <div class="well">
+
                             </div>
                         </div>
                         <!-- /.panel-body -->
@@ -20,3 +21,6 @@
                 <!-- /.col-lg-12 -->
 </div>
             <!-- /.row -->
+
+<script src="<?php echo base_url(); ?>matrix/plugins/chartjs/Chart.js"></script>
+<script src="<?php echo base_url(); ?>matrix/plugins/chartjs/Custom.js"></script>

@@ -128,13 +128,13 @@
                                     <div class="table-responsive">
                                         <table class="table table-bordered table-hover table-striped dynatable" id="my-ajax-table">
                                             <thead>
-                                               <th>id</th>
-                                                <th>first_name</th>
-                                                <th>last_name</th>
-                                                <th>email</th>
-                                                <th>title</th>
-                                                <th>address</th>
-                                                <th>date</th>
+                                               <th>Contact_ID</th>
+                                                <th>Company_ID</th>
+                                                <th>First_Name</th>
+                                                <th>Last_Name</th>
+                                                <th>Phone</th>
+                                                <th>Job_Title</th>
+                                                <th>Contact_Date</th>
                                             </thead>
                                             <tbody>
                                             </tbody>
@@ -465,7 +465,7 @@
      $('#my-ajax-table').dynatable({
   dataset: {
     ajax: true,
-    ajaxUrl: '<?php echo base_url(); ?>index.php/api/api_test',
+    ajaxUrl: '<?php echo base_url(); ?>index.php/api/get_contacts',
     ajaxOnLoad: true,
     records: []
   }
