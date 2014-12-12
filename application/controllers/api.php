@@ -59,7 +59,14 @@ class Api extends CI_Controller {
 	
 	$contacts_list = $this->contacts_modal->get_contacts();
 	
+	$results_list = [];
+	
+	echo json_encode($contacts_list); 
+	return;
+	
 	foreach($contacts_list as &$val){
+		
+		$results_list[] = $val;
 		echo json_encode($val);
 	}
 	

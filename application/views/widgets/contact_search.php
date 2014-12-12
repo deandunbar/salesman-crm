@@ -102,13 +102,13 @@
                         <!-- /.panel-heading -->
                         <div class="panel-body medium_minimum_height">
                             <div class="well">
-								<table id="my-ajax-table">
-								  <thead>
-								    <th>Some Attribute</th>
-								    <th>Some Other Attribute</th>
-								  </thead>
-								  <tbody>
-								  </tbody>
+								<table id="personDataTable">
+								    <tr>
+								        <th>Id</th>
+								        <th>First Name</th>
+								        <th>Last Name</th>
+								    </tr>
+								    
 								</table>
                             </div>
                         </div>
@@ -119,3 +119,51 @@
                 <!-- /.col-lg-12 -->
 </div>
             <!-- /.row -->
+
+
+<script>
+	window.onload = function() {
+		
+		
+		$.ajax({
+    url: '/echo/json/',
+    type: "post",
+    dataType: "json",
+    data: {
+        json: JSON.stringify([
+            {
+            id: 1,
+            firstName: "Peter",
+            lastName: "Jhons"},
+        {
+            id: 2,
+            firstName: "David",
+            lastName: "Bowie"}
+        ]),
+        delay: 3
+    },
+    success: function(data, textStatus, jqXHR) {
+        // since we are using jQuery, you don't need to parse response
+        drawTable(data);
+    }
+});
+		
+		
+		
+function drawTable(data) {
+    for (var i = 0; i < data.length; i++) {
+        drawRow(data[i]);
+    }
+}
+
+function drawRow(rowData) {
+    var row = $("<tr />")
+    $("#personDataTable").append(row); //this will append tr element to table... keep its reference for a while since we will add cels into it
+    row.append($("<td>" + rowData.id + "</td>"));
+    row.append($("<td>" + rowData.firstName + "</td>"));
+    row.append($("<td>" + rowData.lastName + "</td>"));
+}
+};
+
+
+</script>
