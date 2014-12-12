@@ -355,3 +355,15 @@ padding-top: 20px;
 .medium_minimum_height{
 min-height: 500px;
 }
+
+
+
+#personDataTable{
+  border: 1px solid #666;   
+    width: 100%;
+}
+#personDataTable th {
+  background: #f8f8f8; 
+  font-weight: bold;    
+    padding: 2px;
+}
