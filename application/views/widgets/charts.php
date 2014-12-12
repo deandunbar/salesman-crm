@@ -11,14 +11,17 @@
                         <!-- /.panel-heading -->
                         <div class="panel-body medium_minimum_height">
                             <div class="well">
-                                <canvas id="myChart" width="800" height="500" style="width: 100% !important;max-width: 800px;height: auto !important;">
+                                <h1>Compare to Last Year's Conversions</h1>
+                                <canvas id="myChart" width="800" height="500">
 
                             </div>
                             <div class="well">
-                                <canvas id="myChart2" width="800" height="500" style="width: 100% !important;max-width: 800px;height: auto !important;">
+                                <h1>Male vs. Female Interest Survey</h1>
+                                <canvas id="myChart2" width="800" height="500">
                             </div>
                             <div class="well">
-                                <canvas id="myChart3" width="800" height="500" style="width: 100% !important;max-width: 800px;height: auto !important;">
+                                <h1>Compare to Last Year's Conversions</h1>
+                                <canvas id="myChart3" width="800" height="500">
                             </div>
                         </div>
                         <!-- /.panel-body -->
@@ -44,9 +47,9 @@ $(function() {
                     labels: ["January", "February", "March", "April", "May", "June", "July"],
                     datasets: [
                         {
-                            fillColor: "rgba(220,220,220,0.5)",
-                            strokeColor: "rgba(220,220,220,1)",
-                            pointColor: "rgba(220,220,220,1)",
+                            fillColor: "rgba(100,220,220,0.5)",
+                            strokeColor: "rgba(100,220,220,1)",
+                            pointColor: "rgba(100,220,220,1)",
                             pointStrokeColor: "#fff",
                             data: [65, 59, 90, 81, 56, 55, 40]
                         },
@@ -89,7 +92,7 @@ $(function() {
 
         // bar data
                 var data3 = {
-                    labels: ["January", "February", "March", "April", "May", "June", "July"],
+                    labels: ["December","January", "February", "March", "April", "May", "June"],
                     datasets: [
                         {
                             label: "My First dataset",
@@ -109,6 +112,7 @@ $(function() {
                         }
                     ]
                 };
+                Chart.defaults.global.responsive = true;
                 var myNewChart = new Chart(ctx).Line(data);
                 var myRadarChart = new Chart(ctx2).Radar(data2);
                 var myBarChart = new Chart(ctx3).Bar(data3);
