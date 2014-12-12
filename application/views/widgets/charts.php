@@ -24,6 +24,8 @@
 
             <script>
             var ctx = document.getElementById("myChart").getContext("2d");
+           // var myNewChart = new Chart(ctx).PolarArea(data);
+            var myLineChart = new Chart(ctx).Line(data, options);
             var data = {
     labels: ["January", "February", "March", "April", "May", "June", "July"],
     datasets: [
@@ -49,11 +51,10 @@
         }
         ]
     };
-var myNewChart = new Chart(ctx);
-new Chart(ctx).PolarArea(data, options);
+var myLineChart = new Chart(ctx);
+new Chart(ctx).Line(data, options);
 </script>
 
 
-<script src="<?php echo base_url(); ?>matrix/plugins/chartjs/Chart.js"></script>
-<script src="<?php echo base_url(); ?>matrix/plugins/chartjs/Custom.js"></script>
+
 
