@@ -92,7 +92,7 @@
                 </div>
             </div>
             
-            
+
 <div class="row raise_the_roof">
                 <div class="col-lg-12">
                     <div class="panel panel-default">
@@ -104,9 +104,12 @@
                             <div class="well">
 								<table id="personDataTable">
 								    <tr>
-								        <th>Id</th>
+								        <th>Contact ID</th>
 								        <th>First Name</th>
 								        <th>Last Name</th>
+								        <th>Phone</th>
+								        <th>Job Title</th>
+								        <th>Contact Date</th>
 								    </tr>
 								    
 								</table>
@@ -126,22 +129,9 @@
 		
 		
 		$.ajax({
-    url: '/echo/json/',
+    url: '<?php echo base_url(); ?>index.php/api/get_contacts',
     type: "post",
     dataType: "json",
-    data: {
-        json: JSON.stringify([
-            {
-            id: 1,
-            firstName: "Peter",
-            lastName: "Jhons"},
-        {
-            id: 2,
-            firstName: "David",
-            lastName: "Bowie"}
-        ]),
-        delay: 3
-    },
     success: function(data, textStatus, jqXHR) {
         // since we are using jQuery, you don't need to parse response
         drawTable(data);
@@ -159,9 +149,12 @@ function drawTable(data) {
 function drawRow(rowData) {
     var row = $("<tr />")
     $("#personDataTable").append(row); //this will append tr element to table... keep its reference for a while since we will add cels into it
-    row.append($("<td>" + rowData.id + "</td>"));
-    row.append($("<td>" + rowData.firstName + "</td>"));
-    row.append($("<td>" + rowData.lastName + "</td>"));
+    row.append($("<td>" + rowData.Contact_ID + "</td>"));
+    row.append($("<td>" + rowData.First_Name + "</td>"));
+    row.append($("<td>" + rowData.Last_Name + "</td>"));
+    row.append($("<td>" + rowData.Phone + "</td>"));
+    row.append($("<td>" + rowData.Job_Title + "</td>"));
+    row.append($("<td>" + rowData.Contact_Date + "</td>"));
 }
 };
 
