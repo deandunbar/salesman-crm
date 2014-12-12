@@ -97,8 +97,17 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
+<!--
                             DataTables Advanced Tables
-                           
+-->
+	                           <button type="button" class="btn btn-labeled btn-default btn-sm">						   
+				                <span class="btn-label"><i class="glyphicon glyphicon-chevron-left"></i></span>Left</button>
+				                <button type="button" class="btn btn-labeled btn-default btn-sm">
+				                <span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span>Right</button>
+                
+                
+                
+                
 								<div class="row">
 							        <div class="search">
 										<input type="text" class="form-control input-sm" maxlength="64" placeholder="Search" />
