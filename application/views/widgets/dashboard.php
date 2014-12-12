@@ -128,8 +128,13 @@
                                     <div class="table-responsive">
                                         <table class="table table-bordered table-hover table-striped dynatable" id="my-ajax-table">
                                             <thead>
-                                               <th>Some Attribute</th>
-                                                <th>Some Other Attribute</th>
+                                               <th>id</th>
+                                                <th>first_name</th>
+                                                <th>last_name</th>
+                                                <th>email</th>
+                                                <th>title</th>
+                                                <th>address</th>
+                                                <th>date</th>
                                             </thead>
                                             <tbody>
                                             </tbody>
