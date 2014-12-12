@@ -1,5 +1,7 @@
 {
-  "records": [{"id":1,"first_name":"Martha","last_name":"Hayes","email":"mhayes0@printfriendly.com","title":"Junior Executive","address":"83833 Oneill Circle","date":"09/25/2014"},
+  "records": [
+  {
+  "id":1,"first_name":"Martha","last_name":"Hayes","email":"mhayes0@printfriendly.com","title":"Junior Executive","address":"83833 Oneill Circle","date":"09/25/2014"},
 {"id":2,"first_name":"Catherine","last_name":"Lynch","email":"clynch1@seattletimes.com","title":"Assistant Media Planner","address":"85005 Thompson Hill","date":"07/13/2014"},
 {"id":3,"first_name":"Thomas","last_name":"Reed","email":"treed2@phpbb.com","title":"Senior Editor","address":"63 Trailsway Place","date":"03/19/2014"},
 {"id":4,"first_name":"Jonathan","last_name":"Harvey","email":"jharvey3@upenn.edu","title":"Nuclear Power Engineer","address":"71113 Buhler Pass","date":"11/19/2014"},
@@ -998,7 +1000,8 @@
 {"id":997,"first_name":"Keith","last_name":"Alvarez","email":"kalvarezro@domainmarket.com","title":"Paralegal","address":"97 Old Shore Trail","date":"03/18/2014"},
 {"id":998,"first_name":"Sandra","last_name":"Freeman","email":"sfreemanrp@umn.edu","title":"Senior Developer","address":"67552 Messerschmidt Center","date":"10/02/2014"},
 {"id":999,"first_name":"Sarah","last_name":"Martinez","email":"smartinezrq@cam.ac.uk","title":"Safety Technician I","address":"2 Morrow Point","date":"05/16/2014"},
-{"id":1000,"first_name":"Juan","last_name":"Simmons","email":"jsimmonsrr@51.la","title":"Assistant Manager","address":"8213 Gulseth Point","date":"05/04/2014"}],
-  "queryRecordCount": 1000,
+{"id":1000,"first_name":"Juan","last_name":"Simmons","email":"jsimmonsrr@51.la","title":"Assistant Manager","address":"8213 Gulseth Point","date":"05/04/2014"}
+],
+  "queryRecordCount": 10,
   "totalRecordCount": 1000
 }
