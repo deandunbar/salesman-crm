@@ -11,7 +11,7 @@ Class Contacts_modal extends CI_Model
 	 * 
 	 *
 	 */
-	function get_contacts($location_id){
+	function get_contacts($lim = NULL){
 		
 		
 		$this -> db -> select('Contact_ID, Company_ID,First_Name, Last_Name, Phone, Job_Title, Contact_Date');
