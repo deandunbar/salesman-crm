@@ -11,7 +11,7 @@
                         <!-- /.panel-heading -->
                         <div class="panel-body medium_minimum_height">
                             <div class="well">
-                                <canvas id="myChart" width="400" height="400">
+                                <canvas id="myChart" width="100%" height="100%">
                             </div>
                         </div>
                         <!-- /.panel-body -->
@@ -22,11 +22,9 @@
 </div>
             <!-- /.row -->
 <script>
-            window.onload = graph;
 
 
-            function graph() {
-                alert("Hello! I am an alert box!!");
+$(function() {
                 var ctx = $("#myChart").get(0).getContext("2d");
 
                 var data = {
@@ -50,8 +48,6 @@
                 }
 
                 var myNewChart = new Chart(ctx).Line(data);
-            }
-
-
+            });
 </script>
 
