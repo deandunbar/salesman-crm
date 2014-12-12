@@ -106,12 +106,14 @@
                 
                 
 								<div class="row">
-							        <div class="search">
+									<div class="col-md-4 pull-left">
 										<button type="button" class="btn btn-labeled btn-default btn-sm">						   
 										<span class="btn-label"><i class="glyphicon glyphicon-chevron-left"></i></span>Left</button>
 										<button type="button" class="btn btn-labeled btn-default btn-sm">
-										<span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span>Right</button>
-				                
+										<span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span>Right</button>									
+									</div>
+									
+							        <div class="search">				                
 										<input type="text" id="contact_search_table_text_field" class="form-control input-sm" maxlength="64" placeholder="Search" />
 										 <button id="contact_search_table_button" type="submit" class="cool_search_button btn btn-primary btn-sm">Search</button>
 									</div>

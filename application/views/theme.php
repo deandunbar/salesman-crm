@@ -382,6 +382,7 @@
     <script src="<?php echo base_url(); ?>matrix/themes/sbadmin/js/sb-admin-2.js"></script>
     <script src="<?php echo base_url(); ?>matrix/plugins/chartjs/Chart.js"></script>
 <script src="<?php echo base_url(); ?>matrix/plugins/chartjs/Custom.js"></script>
+<script src="<?php echo base_url(); ?>matrix/plugins/highlight/jquery.highlight-4.js"></script>
 
 </body>
 
