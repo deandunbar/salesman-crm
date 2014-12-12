@@ -68,6 +68,8 @@ Class Contacts_modal extends CI_Model
 		//~ $this -> db -> where('Location_ID', $location_id);
 		$this->db->like('First_Name', $match);
 		$this->db->or_like('Last_Name', $match); 
+		$this->db->or_like('Phone', $match); 
+		$this->db->or_like('Job_Title', $match); 
 		$this -> db -> limit($lim, $off);
 		
 		

@@ -173,7 +173,7 @@ function drawTable(data) {
 	$("#personDataTable").find("tr:gt(0)").remove();
     for (var i = 0; i < data.length; i++) {
         drawRow(data[i]);
-    }
+    }      
 }
 
 function drawRow(rowData) {
@@ -191,10 +191,11 @@ function drawRow(rowData) {
 
 $( "#contact_search_table_button" ).click(function() {
 	//delete old table
-	$("#personDataTable").find("tr:gt(0)").remove();
-	
+	$("#personDataTable").find("tr:gt(0)").remove();	
 	console.log("search button clicked");
   var search_query = $( "#contact_search_table_text_field" ).val();
+  
+
   
   
       $.ajax({
@@ -205,6 +206,7 @@ $( "#contact_search_table_button" ).click(function() {
     success: function(data, textStatus, jqXHR) {
         // since we are using jQuery, you don't need to parse response
         drawTable(data.data);
+        $("#personDataTable").find("tr:gt(0)").highlight(search_query);
 	    }
 	});
 
