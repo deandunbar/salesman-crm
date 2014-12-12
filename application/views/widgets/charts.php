@@ -23,6 +23,14 @@
                                 <h1>Compare to Last Year's Conversions</h1>
                                 <canvas id="myChart3" width="800" height="500">
                             </div>
+                            <div class="well pi"style="width:50%; float:left;">
+                                <h1>Compare to Last Year's Conversions</h1>
+                                <canvas id="myChart4" width="400" height="200">
+                            </div>
+                             <div class="well pi" style="width:50%; float:right;">
+                                <h1>Compare to Last Year's Conversions</h1>
+                                <canvas id="myChart5" width="400" height="200">
+                            </div>
                         </div>
                         <!-- /.panel-body -->
                     </div>
@@ -40,6 +48,9 @@ $(function() {
                 var ctx = $("#myChart").get(0).getContext("2d");
                 var ctx2 = $("#myChart2").get(0).getContext("2d");
                 var ctx3 = $("#myChart3").get(0).getContext("2d");
+                var ctx4 = $("#myChart4").get(0).getContext("2d");
+                var ctx5 = $("#myChart5").get(0).getContext("2d");
+
 
 
         //line data
@@ -112,10 +123,34 @@ $(function() {
                         }
                     ]
                 };
+
+        // pi data
+                    var data4 = [
+                {
+                    value: 300,
+                    color:"#F7464A",
+                    highlight: "#FF5A5E",
+                    label: "Red"
+                },
+                {
+                    value: 50,
+                    color: "#46BFBD",
+                    highlight: "#5AD3D1",
+                    label: "Green"
+                },
+                {
+                    value: 100,
+                    color: "#FDB45C",
+                    highlight: "#FFC870",
+                    label: "Yellow"
+                }
+            ]
                 Chart.defaults.global.responsive = true;
                 var myNewChart = new Chart(ctx).Line(data);
                 var myRadarChart = new Chart(ctx2).Radar(data2);
                 var myBarChart = new Chart(ctx3).Bar(data3);
+                var myPieChart = new Chart(ctx4).Pie(data4);
+                var myDoughnutChart = new Chart(ctx5).Doughnut(data4);
             });
 </script>
 
