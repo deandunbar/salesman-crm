@@ -11,13 +11,18 @@ Class Contacts_modal extends CI_Model
 	 * 
 	 *
 	 */
-	function get_contacts($lim = NULL){
-		
+	function get_contacts($lim = NULL, $off = NULL){
+		if (!isset($lim)) {
+	    $lim = 10;
+		}
+		if (!isset($off)) {
+		    $off = 0;
+		}
 		
 		$this -> db -> select('Contact_ID, Company_ID,First_Name, Last_Name, Phone, Job_Title, Contact_Date');
 		$this -> db -> from('Contact');
 		//~ $this -> db -> where('Location_ID', $location_id);
-		$this -> db -> limit(50);
+		$this -> db -> limit($lim, $off);
 		
 		$query = $this -> db -> get();
 	
