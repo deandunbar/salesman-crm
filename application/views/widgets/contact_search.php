@@ -125,16 +125,12 @@
 
 
 <script>
-	
-	
-	
-	
-	
-	
-	function start_page() {
-		
-		
-		$.ajax({
+
+
+ onload = function() {
+    console.log("running");
+    
+    $.ajax({
     url: '<?php echo base_url(); ?>index.php/api/get_contacts',
     type: "post",
     dataType: "json",
@@ -162,7 +158,8 @@ function drawRow(rowData) {
     row.append($("<td>" + rowData.Job_Title + "</td>"));
     row.append($("<td>" + rowData.Contact_Date + "</td>"));
 }
-}
-window.onload = start_page();
+    
+    
+  }
 
 </script>

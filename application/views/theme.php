@@ -18,6 +18,11 @@
     <link href="<?php echo base_url(); ?>matrix/themes/sbadmin/css/plugins/morris.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>matrix/plugins/dynatable/jquery.dynatable.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>matrix/themes/sbadmin/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+<!--
+    because errors
+-->
+    <script src="<?php echo base_url(); ?>matrix/themes/sbadmin/js/jquery.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -369,7 +374,7 @@
     <!-- /#wrapper -->
 
     <!-- jQuery -->
-    <script src="<?php echo base_url(); ?>matrix/themes/sbadmin/js/jquery.js"></script>
+    
     <script src="<?php echo base_url(); ?>matrix/themes/sbadmin/js/bootstrap.min.js"></script>
     <script src="<?php echo base_url(); ?>matrix/themes/sbadmin/js/plugins/metisMenu/metisMenu.min.js"></script>
 
