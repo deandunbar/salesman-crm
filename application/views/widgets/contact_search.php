@@ -110,8 +110,8 @@
                 
 								<div class="row">
 							        <div class="search">
-										<input type="text" class="form-control input-sm" maxlength="64" placeholder="Search" />
-										 <button type="submit" class="btn btn-primary btn-sm">Search</button>
+										<input type="text" id="contact_search_table_text_field" class="form-control input-sm" maxlength="64" placeholder="Search" />
+										 <button id="contact_search_table_button" type="submit" class="btn btn-primary btn-sm">Search</button>
 									</div>
 								</div>
                             
@@ -179,6 +179,35 @@ function drawRow(rowData) {
     row.append($("<td>" + rowData.Job_Title + "</td>"));
     row.append($("<td>" + rowData.Contact_Date + "</td>"));
 }
+
+
+
+$( "#contact_search_table_button" ).click(function() {
+	//delete old table
+	$("#personDataTable").find("tr:gt(0)").remove();
+	
+	console.log("search button clicked");
+  var search_query = $( "#contact_search_table_text_field" ).val();
+  
+  
+      $.ajax({
+    url: '<?php echo base_url(); ?>index.php/api/search_contacts',
+    type: "post",
+    dataType: "json",
+    data: {lim: 10, off: 0},
+    success: function(data, textStatus, jqXHR) {
+        // since we are using jQuery, you don't need to parse response
+        drawTable(data.data);
+	    }
+	});
+
+  
+  
+});
+
+
+
+
     
     
 });
