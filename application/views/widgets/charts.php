@@ -20,7 +20,7 @@
                         <!-- /.panel-heading -->
                         <div class="panel-body medium_minimum_height">
                             <div class="well">
-                                <h1>Compare to Last Year's Conversions</h1>
+                                <h1>Sales Forcast</h1>
                                 <canvas id="myChart" width="800" height="300">
 
                             </div>
@@ -29,15 +29,15 @@
                                 <canvas id="myChart2" width="800" height="300">
                             </div>
                             <div class="well">
-                                <h1>Compare to Last Year's Conversions</h1>
+                                <h1>Comparison Last Year's Conversions</h1>
                                 <canvas id="myChart3" width="800" height="300">
                             </div>
                             <div class="well pi-r">
-                                <h1>Compare to Last Year's Conversions</h1>
+                                <h1>Weekly sales leaderboard</h1>
                                 <canvas id="myChart4" width="400" height="200">
                             </div>
                              <div class="well pi-l">
-                                <h1>Compare to Last Year's Conversions</h1>
+                                <h1>Weekly leads attainment</h1>
                                 <canvas id="myChart5" width="400" height="200">
                             </div>
                         </div>
@@ -69,7 +69,7 @@ $(function() {
                         {
                             fillColor: "rgba(172,194,132,0.4)",
                             strokeColor: "#ACC26D",
-                            pointColor: "#fff",
+                            pointColor: "#FFF",
                             pointStrokeColor: "#9DB86D",
                             data: [65, 59, 90, 81, 56, 55, 40]
                         },
@@ -77,7 +77,7 @@ $(function() {
                             fillColor: "rgba(151,187,205,0.5)",
                             strokeColor: "rgba(151,187,205,1)",
                             pointColor: "rgba(151,187,205,1)",
-                            pointStrokeColor: "#fff",
+                            pointStrokeColor: "#FFF",
                             data: [28, 48, 40, 19, 96, 27, 100]
                         }
                     ]
@@ -86,6 +86,7 @@ $(function() {
         //bar data
                 var data2 = {
                     labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
+
                     datasets: [
                         {
                             label: "My First dataset",
@@ -139,19 +140,58 @@ $(function() {
                     value: 300,
                     color:"#F7464A",
                     highlight: "#FF5A5E",
-                    label: "Red"
+                    label: "Phone Sales"
                 },
                 {
                     value: 50,
                     color: "#46BFBD",
                     highlight: "#5AD3D1",
-                    label: "Green"
+                    label: "Mail Sales"
                 },
                 {
                     value: 100,
                     color: "#FDB45C",
                     highlight: "#FFC870",
-                    label: "Yellow"
+                    label: "Email Sales"
+                }
+            ]
+            //
+                  var data5 = [
+                {
+                    value: 100,
+                    color:"#F7464A",
+                    highlight: "#FF455E",
+                    label: "John Mucks"
+                },
+                {
+                    value: 50,
+                    color: "#46BFBD",
+                    highlight: "#5233D1",
+                    label: "Tim Allen"
+                },
+                {
+                    value: 220,
+                    color: "#FDB45C",
+                    highlight: "#FFC870",
+                    label: "Barry Allen"
+                },
+                {
+                    value: 30,
+                    color:"#F7464A",
+                    highlight: "#F65A5E",
+                    label: "Jeff Stew"
+                },
+                {
+                    value: 70,
+                    color: "#46BFBD",
+                    highlight: "#5A33D1",
+                    label: "Paul Dun"
+                },
+                {
+                    value: 20,
+                    color: "#FDB45C",
+                    highlight: "#F2C870",
+                    label: "Timm Sun"
                 }
             ]
                 Chart.defaults.global.responsive = true;
@@ -159,7 +199,7 @@ $(function() {
                 var myRadarChart = new Chart(ctx2).Radar(data2);
                 var myBarChart = new Chart(ctx3).Bar(data3);
                 var myPieChart = new Chart(ctx4).Pie(data4);
-                var myDoughnutChart = new Chart(ctx5).Doughnut(data4);
+                var myDoughnutChart = new Chart(ctx5).Doughnut(data5);
             });
 </script>
 
